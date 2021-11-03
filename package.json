@@ -1,0 +1,19 @@
+{
+  "name": "project-starter",
+  "version": "1.0.0",
+  "description": "project starter pack with gulp",
+  "main": "gulpfile.js",
+  "keywords": [],
+  "author": "yawson enoch",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.43.4"
+  }
+}

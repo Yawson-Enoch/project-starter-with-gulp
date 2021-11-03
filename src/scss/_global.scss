@@ -1,0 +1,43 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.7;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.2;
+}
+
+:is(input, textarea, select, button, label) {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// a {
+//   text-decoration: none;
+//   display: block;
+//   transition: ;
+
+//   &:hover,
+//   &:active {
+//     background: ;
+//     color: ;
+//   }
+// }
+
