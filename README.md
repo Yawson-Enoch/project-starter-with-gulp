@@ -31,8 +31,7 @@ npm install gulp-autoprefixer --save-dev
 npm install gulp-clean-css --save-dev
 npm install gulp-sourcemaps --save-dev
 npm install gulp-uglify --save-dev
-
-// you can chain all package names and add --save-dev to save as a devDependency instead of installing individually.
+npm install gulp-babel @babel/core @babel/preset-env --save-dev
 
 ```
 

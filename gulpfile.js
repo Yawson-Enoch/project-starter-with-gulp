@@ -6,6 +6,7 @@ const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const sourcemaps = require("gulp-sourcemaps");
+const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 
 // set filePaths
@@ -33,6 +34,11 @@ function scssMinify() {
 function jsMinify() {
   return src(srcPath.js)
     .pipe(sourcemaps.init())
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
     .pipe(uglify())
     .pipe(sourcemaps.write("../sourcemaps/"))
     .pipe(dest(destPath.js));
