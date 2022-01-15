@@ -20,18 +20,11 @@ NB: must have nodejs installed which comes with npm
 
 - copy content of gulpfile.js
 
-- install packages
+- install all packages
 
 ```javascript
 
-npm install gulp --save-dev
-npm install sass --save-dev
-npm install gulp-sass --save-dev
-npm install gulp-autoprefixer --save-dev
-npm install gulp-clean-css --save-dev
-npm install gulp-sourcemaps --save-dev
-npm install gulp-uglify --save-dev
-npm install gulp-babel @babel/core @babel/preset-env --save-dev
+npm i -D sass gulp-sass gulp-sourcemaps gulp-autoprefixer gulp-clean-css gulp-terser
 
 ```
 

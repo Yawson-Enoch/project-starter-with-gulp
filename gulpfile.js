@@ -1,23 +1,21 @@
-"use strict";
+'use strict';
 
 // import gulp packages
-const { src, dest, watch, parallel, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require("gulp-autoprefixer");
-const cleanCSS = require("gulp-clean-css");
-const sourcemaps = require("gulp-sourcemaps");
-const babel = require("gulp-babel");
-const uglify = require("gulp-uglify");
-
+const { src, dest, watch, parallel, series } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
+const terser = require('gulp-terser');
 // set filePaths
 const srcPath = {
-  sass: "src/scss/**/*.scss",
-  js: "src/js/**/*.js",
+  sass: 'src/scss/**/*.scss',
+  js: 'src/js/**/*.js',
 };
 
 const destPath = {
-  sass: "dist/css/",
-  js: "dist/js/",
+  sass: 'dist/css/',
+  js: 'dist/js/',
 };
 
 // set functions
@@ -27,20 +25,15 @@ function scssMinify() {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write("../sourcemaps/"))
+    .pipe(sourcemaps.write('../../sourcemaps/'))
     .pipe(dest(destPath.sass));
 }
 
 function jsMinify() {
   return src(srcPath.js)
     .pipe(sourcemaps.init())
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-      })
-    )
-    .pipe(uglify())
-    .pipe(sourcemaps.write("../sourcemaps/"))
+    .pipe(terser())
+    .pipe(sourcemaps.write('../../sourcemaps/'))
     .pipe(dest(destPath.js));
 }
 
