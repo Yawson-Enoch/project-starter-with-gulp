@@ -1,1 +1,1 @@
-console.log('hello all!');
+console.log('never stop learning!');

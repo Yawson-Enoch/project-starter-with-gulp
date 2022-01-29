@@ -1,0 +1,22 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($val: 25rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+}
+
+@mixin wrapper {
+  // width: clamp(200px, 95%, 1024px);
+  width: min(95%, 1024px);
+  margin: 0 auto;
+}
+
+@mixin breakpoint($width: 1024px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
