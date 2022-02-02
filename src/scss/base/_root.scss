@@ -47,12 +47,6 @@
   --heading-font: 'Poppins', sans-serif;
   --body-font: 'PT Serif', serif;
 
-  // --fs-xs: 1rem;
-  // --fs-p: 1.5rem;
-  // --fs-h1: 2.4rem;
-  // --fs-h2: 2.2rem;
-  // --fs-h3: 2rem;
-
   --fs-h1: clamp(2.5rem, 1rem + 3.5vw, 3.5rem);
   --fs-h2: clamp(2rem, 1rem + 3vw, 3rem);
   --fs-p: clamp(1.5rem, 1rem + 1.7vw, 1.7rem);
@@ -66,13 +60,3 @@
   --gap: var(--fs-xs);
   --transition: 0.3s ease-in-out;
 }
-
-// @media (min-width: 1024px) {
-//   :root {
-//     --fs-xs: 1.2rem;
-//     --fs-p: 1.7rem;
-//     --fs-h1: 3.4rem;
-//     --fs-h2: 3.2rem;
-//     --fs-h3: 3rem;
-//   }
-// }
