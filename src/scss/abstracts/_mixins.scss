@@ -9,9 +9,8 @@
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
 }
 
-@mixin wrapper {
-  // width: clamp(200px, 95%, 1024px);
-  width: min(95%, 1024px);
+@mixin wrapper($width: 1024px) {
+  width: min(95%, $width);
   margin: 0 auto;
 }
 
