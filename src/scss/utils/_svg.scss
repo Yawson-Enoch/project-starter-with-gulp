@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+.svg {
+  @include center();
+  $size: 2.2rem;
+  width: $size;
+  height: $size;
+
+  svg {
+    fill: var(--clr-bg);
+    width: 100%;
+    height: 100%;
+  }
+}

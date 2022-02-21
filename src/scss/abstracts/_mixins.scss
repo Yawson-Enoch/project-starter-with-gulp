@@ -1,4 +1,4 @@
-@mixin center {
+@mixin center() {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,13 +9,26 @@
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
 }
 
-@mixin wrapper($width: 1024px) {
+@mixin wrapper($width: var(--max-width)) {
   width: min(95%, $width);
   margin: 0 auto;
 }
 
-@mixin breakpoint($width: 1024px) {
-  @media (min-width: $width) {
+@mixin hover() {
+  @media (hover: hover) {
     @content;
+  }
+}
+
+@mixin breakpoint($width) {
+  @if $width == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $width == laptop {
+    @media (min-width: 1024px) {
+      @content;
+    }
   }
 }

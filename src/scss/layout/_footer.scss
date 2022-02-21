@@ -1,1 +1,14 @@
 @use '../abstracts' as *;
+
+.footer {
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+.footer-wrapper {
+  padding: var(--gap-md) 0;
+
+  p {
+    text-align: center;
+  }
+}

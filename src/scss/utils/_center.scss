@@ -1,3 +1,5 @@
-.center{
-@include center();
+@use '../abstracts/index' as *;
+
+.center {
+  @include center();
 }

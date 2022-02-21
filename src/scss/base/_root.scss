@@ -1,4 +1,4 @@
-@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Poppins:wght@400;700&display=swap');
 
 :root {
   // colors
@@ -38,21 +38,21 @@
   // rest of the colors
   --black: #000000;
   --white: #ffffff;
-  --error: #990000;
-  --success: #01910f;
+  --error: #842029;
+  --success: #0f5132;
 
   // fonts
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'PT Serif', serif;
+  --ff-heading: 'Poppins', sans-serif;
+  --ff-body: 'PT Serif', serif;
 
-  --fs-h1: clamp(2.2rem, 1.4rem + 1.4vw, 2.6rem);
-  --fs-h2: clamp(1.6rem, 1.2rem + 1.2vw, 2rem);
-  --fs-p: clamp(1.4rem, 0.7rem + 0.7vw, 1.8rem);
-  --fs-xs: clamp(0.8rem, 0.5rem + 0.5vw, 1.2rem);
+  --fs-h1: clamp(2.7rem, 2.5rem + 2.5vw, 3.2rem);
+  --fs-h2: clamp(2rem, 1.8rem + 1.8vw, 2.5rem);
+  --fs-p: clamp(1.5rem, 1.1rem + 1.1vw, 1.8rem);
+  --fs-xs: clamp(0.8rem, 0.5rem + 0.5vw, 1.1rem);
 
-  // rest of the variables
-  --bg-color: var(--grey-100);
-  --text-color: var(--grey-800);
+  // page-specific variables
+  --clr-bg: var(--grey-100);
+  --clr-text: var(--grey-800);
   --radius-xs: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
@@ -60,6 +60,7 @@
   --gap-xs: var(--fs-xs);
   --gap-md: var(--fs-p);
   --gap-lg: var(--fs-h1);
-  --transition3: 0.3s ease-in-out;
-  --transition5: 0.5s ease-in-out;
+  --max-width: 1024px;
+  --transition-3s: 0.3s ease-in-out;
+  --transition-5s: 0.5s ease-in-out;
 }

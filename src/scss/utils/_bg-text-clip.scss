@@ -1,0 +1,7 @@
+.bg-text-clip {
+  width: fit-content;
+  background: linear-gradient(to right, var(--orange-500), var(--blue-500));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
